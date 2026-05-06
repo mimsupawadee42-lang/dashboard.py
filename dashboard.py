@@ -193,9 +193,9 @@ date_str = (
     if pd.notna(date_min) else "N/A"
 )
 
-# Group counts
-oc_py_total = len(df[df[["Organochlorine","Pyrethroid"]].notna().any(axis=1)])
-op_ca_total = len(df[df[["Organophosphate","Carbamate"]].notna().any(axis=1)])
+# Group counts — ทุกตัวอย่างทดสอบทั้ง 2 ชุด ดังนั้นจำนวนเท่ากันหมด
+op_ca_total = len(df)
+oc_py_total = len(df)
 
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("🧪 ตัวอย่างทั้งหมด",            f"{total_samples:,}")
