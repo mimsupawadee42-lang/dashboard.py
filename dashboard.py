@@ -165,7 +165,7 @@ with col_gt:
     st.markdown(f"""
     <div class="kit-card">
         <h3>GT Test Kit</h3>
-        <div class="count">{len(gt_df):,}</div>
+        <div class="count">{len(df):,}</div>
         <p>ตัวอย่าง  ·  Organophosphate + Carbamate</p>
     </div>""", unsafe_allow_html=True)
 
@@ -173,7 +173,7 @@ with col_gpo:
     st.markdown(f"""
     <div class="kit-card kit-card-green">
         <h3>GPO TM/2 Test Kit</h3>
-        <div class="count">{len(gpo_df):,}</div>
+        <div class="count">{len(df):,}</div>
         <p>ตัวอย่าง  ·  Organochlorine + Pyrethroid</p>
     </div>""", unsafe_allow_html=True)
 
